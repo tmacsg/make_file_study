@@ -1,6 +1,7 @@
 #include <iostream>
 #include <thread>
 #include "xdata.h"
+#include "test.h"
 
 void ThreadMain()
 {
