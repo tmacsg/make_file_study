@@ -18,4 +18,4 @@ endif
 clean:
 	@$(RM) $(OBJS) $(TARGET)
 
-.phony: clean
+.PHONY: clean
