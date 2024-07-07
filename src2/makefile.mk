@@ -51,6 +51,12 @@ define InstallSH # $(1) TARGET $(2) $(OUT)/bin $(3) para1 $(4) para2 ...
 	@echo "end make stop shell"
 endef
 
+# dependent header files
+all: depend $(TARGET)
+depend:
+	@$(CXX) $(CXXFLAGS) -MM $(SRCS) > .depend
+-include .depend
+
 $(TARGET):$(OBJS)
 ifeq ($(LIBTYPE), .a) # static lib
 	ar -cvr $@ $^
@@ -78,9 +84,9 @@ else
 endif
 
 clean:
-	$(RM) $(OBJS) $(TARGET)
+	$(RM) $(OBJS) $(TARGET) .depend
 ifndef LIBTYPE
 	$(RM) $(START_SH) $(STOP_SH)
 endif
 
-.PHONY: clean uninstall install
+.PHONY: clean uninstall install all depend
