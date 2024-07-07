@@ -1,3 +1,4 @@
+# xthread makefile
 TARGET=libxthread.so
 OBJS=xthread.o
 LDFLAGS=-shared
