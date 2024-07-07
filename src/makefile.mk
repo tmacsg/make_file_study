@@ -1,6 +1,6 @@
 #makefile.mk
 ifndef TARGET
-TARGET:=test
+TARGET:=$(notdir $(shell pwd))  
 endif
 CXXFLAGS:=-I../../include -I../test_gcc -std=c++17 #g++ -c compile auto deduction
 LDFLAGS:=-L../xcom -L../xthread # linking,  can be used for auto deduction
