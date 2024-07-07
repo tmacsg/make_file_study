@@ -9,6 +9,9 @@
             "options": {
                 "cwd": "${workspaceFolder}/src"
             },
+            "presentation": {
+                "reveal": "never"
+            }
         },
         {
             "label": "clean src",
@@ -18,6 +21,9 @@
             "options": {
                 "cwd": "${workspaceFolder}/src"
             },
+            "presentation": {
+                "reveal": "never"
+            }
         },
         {
             "label": "build src2",
@@ -27,6 +33,9 @@
             "options": {
                 "cwd": "${workspaceFolder}/src2"
             },
+            "presentation": {
+                "reveal": "never"
+            }
         },
         {
             "label": "clean src2",
@@ -36,6 +45,9 @@
             "options": {
                 "cwd": "${workspaceFolder}/src2"
             },
+            "presentation": {
+                "reveal": "never"
+            }
         },
         {
             "label": "rebuild src2",
