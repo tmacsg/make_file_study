@@ -2,7 +2,7 @@
 ifndef TARGET
 TARGET:=$(notdir $(shell pwd))
 endif
-CXXFLAGS:=$(CXXFLAGS) -I../../include -std=c++17 #g++ -c compile auto deduction
+CXXFLAGS:=$(CXXFLAGS) -I../../include -g -std=c++17 #g++ -c compile auto deduction
 LDFLAGS:=$(LDFLAGS) # linking,  can be used for auto deduction
 LDLIBS:=$(LDLIBS) # link libs, can be used for auto deduction
 # /usr/bin /usr/lib /usr/include
